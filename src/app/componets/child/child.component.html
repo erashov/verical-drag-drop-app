@@ -1,0 +1,6 @@
+<div *ngFor="let item of items; index as i">
+  <div appReorder [formControl]="formControls[i]" (reordered)="onReordered($event)">
+    <input type="checkbox" [formControl]="formControls[i]" aria-label="Title">
+    {{ item.title }}
+  </div>
+</div>

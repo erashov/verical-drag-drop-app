@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@keyframes move {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 20px);
+  }
+}
+
+.checkbox-element {
+  animation: move 0.5s ease-in-out;
+}
